@@ -28,7 +28,6 @@ var onResult = function (result) {
   var locations = result.Response.View[0].Result,
     position,
     marker;
-  // Add a marker for each location found
   for (i = 0; i < locations.length; i++) {
     position = {
       lat: locations[i].Location.DisplayPosition.Latitude,
