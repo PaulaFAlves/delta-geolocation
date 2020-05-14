@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Delta Global Assistence - Localization</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet"> 
 	<script 
 		src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
   		type="text/javascript" charset="utf-8"></script>
@@ -14,17 +15,15 @@
   		type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-	<h1>Meu mapa</h1>
-	<form action="" id="form">
-		<input type="text" id="endereco">
-		<input type="submit">
-	</form>
-	<button id="user-location">Minha localizacao</button>
-	<div id="map-container" style="width: 340px; height: 420px">
+	<div id="map-container"></div>
+	<div class="address">
+		<form action="submit" id="form" class="form">
+			<input type="text" class="endereco" id="endereco" placeholder="Digite o endereço">
+			<h3>Confirme seu local</h3>
+			<p>Ajude o seu prestador a localizá-lo mais rapidamente, ajuste sua localização acima.</p>
+			<input type="submit" class="button-confirm" value="Confirmar o local da ocorrência ->">
+		</form>
 	</div>
-
-
-
 	<script src="scripts.js"></script>
 </body>
 </html>
